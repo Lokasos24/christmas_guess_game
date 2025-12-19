@@ -3,6 +3,11 @@ import { sendNumber } from '../services/verifynumber.js'
 import { showAttemps } from "../services/attems.js";
 import { useClues } from "../services/clues.js";
 
+const resetButton = document.getElementById('reload')
+resetButton.addEventListener('click', event => {
+    location.reload()
+})
+
 export function gameStart(){
     const input = document.getElementById('random_number')
     const send = document.getElementById('start');

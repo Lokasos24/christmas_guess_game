@@ -94,3 +94,12 @@ section{
 #result, #clue, #mesage{
 	text-align: center;
 }
+
+.reload{
+	display: flex;
+	justify-content: center;
+}
+
+#reload{
+	justify-self: center;
+}

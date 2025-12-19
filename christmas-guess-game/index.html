@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El juego del regalo misterioso</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <button disabled id="tries"></button>
+        </section>
+        <div>
+            <h1>El regalo misterioso de santa</h1>
+        </div>
+        <section>
+            <button class="clues" id="give_clue"></button>
+        </section>
+    </header>
+    <main>
+        <section class="send_gift">
+
+            <form action="" type="submit" id="find_gift">
+                <input class="find_gift" id="random_number" type="text" placeholder="Numero de 1 a 25">
+                <button class="send_answer" id="start" type="submit">Adivinar</button>
+            </form>
+
+            <section id="right_side">
+                <div id="result">
+                    <h4>Resultado</h4>
+                    <span></span>
+                </div>
+                <div id="clue">
+                    <h4>Pista</h4>
+                    <span></span>
+                </div>
+                <div id="mesage">
+                    <span></span>
+                </div>
+            </section>
+
+        </section>
+
+        <button type="reset" id="reload">Jugar denuevo</button>
+    </main>
+</body>
+</html>

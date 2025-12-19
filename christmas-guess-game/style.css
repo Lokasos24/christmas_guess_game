@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: linear-gradient(to top, #070d59, #b30059);
+	color: white;
+	font-family: 'Comic Sans MS', sans-serif;
+	display: grid;
+	min-height: 100dvh;
+	grid-template-rows: auto 1fr auto;
+}
+
+button {
+	background: #ff0000;
+	color: #fff;
+	border-radius: 8px;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+button:hover {
+	background: #e60000;
+	animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+	from { box-shadow: 0 0 8px #ff0000; }
+	to { box-shadow: 0 0 16px #ff0000; }
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+}
+
+section{
+	height: 90px;
+}
+
+.clues{
+	border: none;
+}
+
+.send_gift{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 50%;
+}
+
+#find_gift{
+	height: 40dvh;
+	display: grid;
+	width: 56dvh;
+	animation: changeColor 4s ease-in-out infinite;
+	border-radius: 10%;
+}
+
+@keyframes changeColor {
+	0%, 100% { 
+		background-color: #4D96FF;
+	}
+	50%	{ 
+		background-color: #FF6F3C;
+	}
+}
+
+#find_gift>button, #find_gift>input{
+	height: 43%;
+	width: 50%;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+	animation: disabled;
+	color: white;
+}
+
+#find_gift>input{
+	background-color: rgb(56, 238, 56);
+}
+
+#right_side{
+	width: 15%;
+	display: grid;
+}
+
+#result, #clue, #mesage{
+	text-align: center;
+}

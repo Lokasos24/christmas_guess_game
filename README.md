@@ -1,6 +1,6 @@
 # 🎄 Juego navideño clasico
 
---Descripcion--
+## Descripcion
 Santa ha escondido un regalo misterioso. Tu objetivo es encontrar el regalo antes de quedarte sin intentos.
 Tienes **10 intentos** y **3 pistas** para encontrar el regalo.
 
